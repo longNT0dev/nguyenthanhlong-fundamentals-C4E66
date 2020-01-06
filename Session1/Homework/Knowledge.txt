@@ -1,0 +1,8 @@
+1.How to check a variables type?
+_Su dung ham typeof
+Console.log(typeof + variable)
+2.Examples for invalid name
+//  let var =5  --> Khong dat ten bien trung voi cac tu khoa nhu for , if , var
+//  let num-ber=6 --> Khong dat ten bien chua cac ki tu dac biet nhu *,&,- , dau cach 
+//  let 6num=7 --> Khong dat ten bien chua chu so o dau 
+

@@ -1,0 +1,35 @@
+//A square
+for(let i=0 ;i<4;i++){
+  fd(100)
+  rt(90)
+}
+// An equilateral triangle
+rt(90)
+fd(150)
+for(let i=0;i<2;i++){
+lt(120)
+fd(150)
+}
+//A Circle
+for(let i=0 ;i<179;i++){
+    rt(2)
+    fd(1)
+}
+//More Circle
+clear()
+for(let j=0;j<6;j++){
+ for(let i=0 ;i<179;i++){
+    rt(2)
+    fd(1)
+}
+  rt(60)
+}
+//Or more Circle
+for(let j=0;j<50;j++){
+ for(let i=0 ;i<179;i++){
+    rt(2)
+    fd(1)
+}
+  rt(60)
+}
+  
