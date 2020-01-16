@@ -2,7 +2,7 @@
 _Giúp cho đoạn code ngắn gọn hơn , đặc biệt khi sử dụng 
 hàm đó nhiều lần
 _function name(){  }
- const name() => {  }
+ const name=() => {  }
 _Giá trị của hàm đc lưu trữ trong giá trị return .Sử 
 dụng giá trị đó cho các hàm hay bài toán lớn khác
 Ex:
