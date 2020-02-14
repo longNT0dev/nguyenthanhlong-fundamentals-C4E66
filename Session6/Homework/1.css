@@ -1,0 +1,155 @@
+*{margin:0px;padding:0px;}
+.divto {
+     height: 671px;
+     width: 600px; 
+     display: flex; 
+     
+}
+.divtrai{
+    height: 532px;
+    width: 91px;
+
+}
+ .first{
+    height: 249px;
+    width: 91px;
+    
+} 
+.khoi1{
+    background-color:rgb(240,128,127);
+    width:91px;
+    height:65px;
+    margin-bottom: 22px;
+}
+.khoi2{
+    height:143px ;
+    width: 91px;
+    margin-bottom: 36px;
+}
+.color1{ 
+    background-color: rgb(1,138,136);
+    height:19px ;
+    width: 91px; ;
+
+}
+.color2{
+    background-color: rgb(172,217,231);
+    height: 12px;
+    width: 91px;
+    
+} 
+div.second{
+   
+   height: 294px ;
+   width:91px ;
+}
+.n1{
+   height:139px ;
+   width:91px;
+   background-color: rgb(211,211,211);
+   margin-bottom:16px ;
+}
+.n2{
+    margin-bottom:44px ;
+
+}
+.divphai{
+    height: 580px;
+    width: 492px;
+    position: absolute;
+      left: 101px;
+      top: 0px;     
+}
+.third{
+    background-color: rgb(158,255,152);
+    height:246px ;
+    width:492px ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+.white{
+    width: 120px;
+    height: 28px;
+    background-color:white;
+    position: absolute;
+      right: 0px;
+      top:160px;
+}
+.black{
+    width: 217px;
+    height: 23px;
+    background-color: black;
+    position: absolute;
+       right: 0px;
+       top:182px;
+
+}
+.fourth{
+    width: 498px ;
+    height:48px ;
+    display: flex;
+    align-items: flex-start;
+    
+    
+}
+.color{
+    width: 122px;
+    height: 48px;
+    background-color: rgb(0,128,1);
+    border-right: solid 1px white;
+}
+.fifth{
+    margin-top: 18px;
+    margin-bottom: 18px;
+   height: 31px;
+   width:498px ;
+   display: flex;
+   align-items: flex-start;
+}
+.c1{
+    height: 31px;
+    width: 293px;
+    background-color: rgb(138,200,235);
+}
+.c2{
+    height: 31px;
+    width: 198px;
+    background-color: rgb(239,128,127);
+}
+.sixth{
+    width: 494px;
+    height: 224px;
+    display: flex;
+    align-items: flex-start;
+}
+.goc{
+    height: 223px;
+    width: 112px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 14px;
+}
+.p1{
+   width:113px ;
+   height: 76px;
+   margin-bottom: 7px;
+   background-color: rgb(190,207,103);
+}
+.p2{
+   width: 112px;
+   height: 140px;
+   margin-bottom: 22px;
+   background-color: rgb(255,160,122);
+}
+.divduoi{
+    width: 592px;
+    height: 50px;
+    background-color:rgb(169,195,220);
+    position: absolute;
+     top:580px;
+}
+
+
