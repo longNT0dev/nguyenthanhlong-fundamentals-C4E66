@@ -46,17 +46,6 @@ add.addEventListener("click",()=>{
       
 })
 function removeLine(index){
-    // timeSheetData.Project.splice(index,1)
-    // timeSheetData.Task.splice(index,1)
-    // timeSheetData.TimeSpent.splice(index,1)
-    // console.log(timeSheetData)
-    // for(let k=0;k<body.children.length;k++){
-    //     body.children[k].children[0].innerHTML=timeSheetData.Project[k]
-     
-    //     body.children[k].children[1].innerHTML=timeSheetData.Task[k]
-    
-    //     body.children[k].children[2].innerHTML=timeSheetData.TimeSpent[k]
-    // }
     body.children[index].innerHTML=null
 }
 function updateLine(index){
