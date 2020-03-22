@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deheaf</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="https://scontent-hkg3-2.xx.fbcdn.net/v/t1.15752-0/p280x280/89605948_2693238447472543_812691770423902208_n.png?_nc_cat=109&_nc_sid=b96e70&_nc_ohc=9AQNzVVuRbIAX99jXuE&_nc_ht=scontent-hkg3-2.xx&oh=bc24ecb1adbe3e1c3e9afa11020f71ec&oe=5E8EF560" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Pacifico&display=swap" rel="stylesheet">
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js"></script>
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/79586042c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- firebase -->
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <div class="header">
+            <div class="brand-name"><a href="#" class="brand-name-text">Deheaf</a></div>
+            <div class="nav-bar">
+                <ul class="bar">
+                    <button type="button" class="btn btn-dark">Home</button>
+                    <button type="button" class="btn btn-dark">Contact</button>
+                    <button type="button" class="btn btn-dark">About</button>
+                    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog"
+                        aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100 font-weight-bold">Write Your Post</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="container">
+                                    <form action="/action_page.php" id="userData">
+                                        <div class="form-group">
+                                            <label for="pwd">#hastags:</label>
+                                            <input type="text" class="form-control" id="hastag"
+                                                placeholder="Enter hastag" name="hastag">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="text">Author Name:</label>
+                                            <input type="text" class="form-control" id="author-text"
+                                                placeholder="Enter name" name="userName">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pwd">Your content:</label><br>
+                                            <input type="text" placeholder="Enter content"  name="content">
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-center">
+                                            <button type="submit" class="btn btn-primary" id="summit">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-default btn-rounded mb-4 btn-dark" data-toggle="modal"
+                            data-target="#modalLoginForm">Write A
+                            Post</button>
+                    </div>
+
+                    <!-- <button type="button" class="btn btn-dark">
+                        Write A Post
+                    </button> -->
+
+                    <!-- <li><button>Home</button></li>
+                    <li><button>Contact</button></li>
+                    <li><button>About</button></li>
+                    <li><button>Write A Post</button></li> -->
+                </ul>
+            </div>
+        </div>
+        <!-- header end -->
+
+        <!-- introduction -->
+        <div class="introduction">
+            <p class="introduction-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+                quaerat incidunt rem autem ipsa est
+                quasi neque nesciunt tenetur mollitia assumenda enim perspiciatis, dolore odio laborum commodi id
+                facilis cumque officiis error perferendis. Neque tempore quasi saepe minus consequuntur veniam
+                voluptatibus cumque, distinctio incidunt eligendi nihil beatae enim excepturi aperiam deleniti. Eius
+                corrupti quia minima quidem commodi illum ipsam animi quasi dolor quibusdam, provident ducimus ipsum
+                ullam. Nobis tempora maxime laudantium, praesentium eius ut quo ipsam, amet rerum fugit officia? Placeat
+                impedit accusamus enim in quisquam id odio? Corrupti possimus dignissimos ducimus aut asperiores
+                provident repudiandae sapiente porro qui dicta.
+            </p>
+        </div>
+        <!-- introduction end -->
+
+        <!-- main -->
+        <div class="main">
+            <!-- tags -->
+            <div class="tags">
+                <p class="tags-text">
+                    <p class="title-tags-text">
+                        Tags relate to our website
+                    </p>
+                    <p class="main-tags-text">
+                        <p class="text"><a href="#" class="tag-link">#hello</a></p>
+                        <p class="text"><a href="#" class="tag-link">#hello</a></p>
+                        <p class="text"><a href="#" class="tag-link">#hello</a></p>
+                        <p class="text"><a href="#" class="tag-link">#hello</a></p>
+                        <p class="text"><a href="#" class="tag-link">#hello</a></p>
+                    </p>
+                </p>
+            </div>
+
+        <!-- main-content -->
+            <div class="main-content" id="content-list">
+                <div class="content" id="posts">
+                    <div class="image-main" id="images">
+                        <img src="img/main-01.png" class="image-class">
+                    </div>
+                    <div class="wrapper-info">
+                        <p class="hastag">
+                            #javascript
+                        </p>
+                        <p class="author">
+                            Steve Jobs
+                        </p>
+                        <p class="post">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, quod velit? Minus iste
+                            exercitationem, expedita corporis, illum temporibus quaerat debitis officia numquam ab vitae
+                            molestias dolor eum suscipit! Hic, nam nihil, soluta velit corrupti earum blanditiis dolorem
+                            iusto vel obcaecati quibusdam laboriosam veniam corporis nemo nisi quam ut facere. In? <a
+                                href="#" class="read-more">Read more...</a>
+                        </p>
+                        <div class="interact" id="interact">
+                            <p id="likeCount">0</p>
+                            <button class="btn-interact" id="like"><i class="fas fa-thumbs-up"></i></button>
+                            <p id="dislikeCount">0</p>
+                            <button class="btn-interact" id="dislike"><i class="fas fa-thumbs-down"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+        <!-- main end -->
+
+        <div class="footer">
+            <p class="team-text">Deheaf &copy; 2020</p>
+            <p class="contact">Contact us now:</p>
+            <div class="icon-contact">
+                <a href="https://web.telegram.org/#/im" target="_blank"><i class="fab fa-telegram-plane fa-2x"></i></a>
+                <a href="https://github.com/vantranthao/final-product" target="_blank"><i
+                        class="fab fa-github-square fa-2x"></i></a>
+                <a href="https://www.facebook.com/tranthao.van.35" target="_blank"><i
+                        class="fab fa-facebook-square fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyA5SRca84t4bN2LE58UY5-mZYRC6bf5jls",
+          authDomain: "deheaf-afe14.firebaseapp.com",
+          databaseURL: "https://deheaf-afe14.firebaseio.com",
+          projectId: "deheaf-afe14",
+          storageBucket: "deheaf-afe14.appspot.com",
+          messagingSenderId: "272414678503",
+          appId: "1:272414678503:web:e5dab89b83fede1e063142",
+          measurementId: "G-DV76845BHM"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore()
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

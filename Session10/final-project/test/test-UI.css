@@ -1,0 +1,246 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+body {
+    top: 0;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+/* header */
+.header {
+    display: grid;
+    grid-template-areas:
+        "brand-name brand-name brand-name nav-bar"
+    ;
+    background-color: var(--dark);
+}
+
+.btn.btn-dark {
+    padding: 10px;
+}
+
+.btn.btn-dark:hover {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.brand-name {
+    grid-area: brand-name;
+}
+
+.nav-bar {
+    grid-area: nav-bar;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar ul li {
+    padding: 1rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.nav-bar a:hover {
+    background: var(--light);
+    color: var(--dark);
+    /* font-size: 1.1rem; */
+    /* border-radius: 0.3rem; */
+}
+
+.brand-name-text {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 2rem;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Pacifico', cursive;
+}
+
+.brand-name {
+    align-self: center;
+    justify-self: center;
+}
+
+/* introduction */
+.introduction-text {
+    background-image: linear-gradient(to right top, #25141e, #2c1729, #301c35, #312243, #2d2952, #2b3a68, #224c7e, #005e92, #0080af, #00a2c5, #00c5d4, #45e7dd);
+    /* background: url(/Health-as-a-poll-issue.jpg) no-repeat center center; */
+    margin-left: 12rem;
+    margin-right: 10rem;
+    text-align: center;
+    color: var(--primary);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+/* main */
+.main {
+    /* width: 100%;
+    height: auto; */
+    margin-left: 12rem;
+    margin-right: 10rem;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-gap: 2rem;
+    margin-bottom: 5%;
+    margin-top: 1px;
+}
+
+.tags {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    height: 400px;
+}
+
+.text {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    padding-left: 12px;
+}
+
+.title-tags-text {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    font-weight: bold;
+    padding-top: 3px;
+    padding-left: 12px;
+}
+
+.content {
+    padding: 12px;
+    padding-left: 30px;
+    margin-bottom: 3px;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.image-class {
+    width: 80%;
+}
+
+.hastag {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    padding-bottom: 1 px;
+}
+
+.author {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+.wrapper-info {
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    padding-left: 12px;
+}
+
+.read-more {
+    text-decoration: none;
+}
+
+.read-more:hover {
+    font-size: 18px;
+    color: lightseagreen;
+}
+
+.interact {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 12px;
+    margin-top: 3px;
+}
+
+.btn {
+    background-color: var(--dark);
+    border: none;
+    color: white;
+    padding: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 12px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    padding: 1rem;
+}
+
+/* .content-02 {
+    padding: 12px;
+    margin-bottom: 3px;
+    background-color: #FFFFFF;
+} */
+
+.main-content {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /* background-color: #FFFFFF; */
+    border-radius: 5px;
+}
+
+/* footer */
+.footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark);
+    height: auto;
+    text-align: center;
+    color: var(--light);
+    padding: 3px;
+    padding-bottom: 3px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.fab.fa-telegram-plane.fa-2x {
+    color: #fff;
+    padding-right: 8px;
+}
+
+.fab.fa-telegram-plane.fa-2x:hover {
+    transform: scale(1.4);
+}
+
+.fab.fa-github-square.fa-2x {
+    color: #fff;
+    padding-right: 8px;
+}
+
+.fab.fa-github-square.fa-2x:hover {
+    transform: scale(1.4);
+}
+
+.fab.fa-facebook-square.fa-2x {
+    color: #fff;
+    padding-right: 8px
+}
+
+.fab.fa-facebook-square.fa-2x:hover {
+    transform: scale(1.4);
+}
+
+
+/* add for form */
+.btn.btn-default.btn-rounded.mb-4.btn-dark {
+    margin-top: 25px;
+}
