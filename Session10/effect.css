@@ -1,0 +1,11 @@
+.carousel-caption h3 {
+    animation-delay: 1s;
+  }
+  
+  .carousel-caption button {
+    animation-delay: 2s;
+  }
+  
+  .carousel-item img {
+    opacity: 0.8;
+  }
