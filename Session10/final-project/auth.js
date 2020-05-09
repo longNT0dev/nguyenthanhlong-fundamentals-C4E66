@@ -31,7 +31,7 @@ db.collection('user').orderBy("time","desc").onSnapshot(snapshot=>{ //desc =>> s
       console.log('user logged out');
     }
   });
-  
+  //auth
   // sign up
   btnSignup.addEventListener('click', (e) => {
     e.preventDefault();
