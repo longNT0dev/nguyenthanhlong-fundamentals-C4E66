@@ -43,6 +43,7 @@ form.addEventListener('submit',(e)=>{
         dislike:0,
         time:dateTime,
     })
+    alert("Success Post")
     form.userName.value = ""
     form.hastag.value= ""
     form.content.value = ""

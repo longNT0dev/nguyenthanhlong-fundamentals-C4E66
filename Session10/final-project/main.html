@@ -86,7 +86,54 @@
                     <li><button>Contact</button></li>
                     <li><button>About</button></li>
                     <li><button>Write A Post</button></li> -->
-                </ul>
+                    
+                    <!-- modal to access   =   START-->
+                    <div class="modal fade" id="modalBox" tabindex="-1" role="dialog"
+                        aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100 font-weight-bold">Connect to us</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="container">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label for="text">Email:</label>
+                                            <input type="text" class="form-control" id="txt-email"
+                                                placeholder="Your email" name="txt-email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pwd">Password:</label>
+                                            <input type="password" class="form-control" id="txt-password"
+                                                placeholder="Your password" name="txt-password">
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-center">
+                                            <button type="submit" class="btn btn-primary" id="log-in">Sign in</button>
+                                            <button type="submit" class="btn btn-primary" id="sign-up">Sign up</button>
+                                            <!-- <button type="submit" class="btn btn-primary" id="logout">Log out</button> -->
+                                        </div>
+                                
+                                    </form>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-default btn-rounded mb-4 btn-dark" data-toggle="modal"
+                            data-target="#modalBox"> Connect us
+                        </button>
+                    </div>
+
+                    <!-- modal to access  =  END-->
+
+
+                    <!-- <button type="submit" class="btn btn-primary" id="logout">Log out</button> -->
+                    <button type="button" class="btn btn-dark" id="logout">Log out</button>
             </div>
         </div>
         <!-- header end -->
@@ -187,6 +234,7 @@
         const db = firebase.firestore()
     </script>
     <script src="main.js"></script>
+    <script src="auth.js"></script>
 </body>
 
 </html>
